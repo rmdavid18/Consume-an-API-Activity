@@ -1,0 +1,22 @@
+﻿@page
+@model renieldavid.APIActivity.Pages.CardModel
+
+@{
+    <form method="get">
+        <div class="form-group row">
+            <label for="inputword" class="col-sm-2 col-form-label">Word</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputword" placeholder="word">
+            </div>
+       
+        <button type="submit" class="">Submit</button>
+    </form> 
+}
+
+<p>@Model.Worddata?.Word?.FirstOrDefault()Meaning</p>
+<p>@Model.Worddata?.Word?.FirstOrDefault()Phonetics</p>
+
+<ul>
+<li>@Model.Worddata?.Word</li>
+ <li>@Model.Worddata?.Word</li>
+</ul>
